@@ -1547,7 +1547,7 @@
                 
             }];
             
-            [videoCamera addTarget:filterView];
+            [videoCamera addTarget:filterView]; // recalculateViewGeometry in GPUImageView will have main thread ui problem
         }
         else
         {
